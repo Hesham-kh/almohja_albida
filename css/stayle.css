@@ -1,0 +1,820 @@
+/*     border-color: rgba(1, 234, 255, 0.5) transparent transparent transparent;
+ */
+*
+{
+    padding: 0;
+    margin: 0;
+    left: 0;
+    box-sizing: border-box;
+    outline: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Lemon', cursive;
+
+}
+@font-face
+{
+    font-family: hesham;
+    src: url();
+}
+/* start loding screen */
+
+.loding-screen
+{
+width: 100%;
+height: 100vh;
+background: rgba(0, 0, 0, 0.5);
+position: fixed;
+left: 0;
+top: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.lds-heart {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    transform-origin: 40px 40px;
+  }
+  .lds-heart div {
+    top: 32px;
+    left: 32px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: rgb(0, 0, 0);
+    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  .lds-heart div:after,
+  .lds-heart div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: rgb(0, 0, 0);
+  }
+  .lds-heart div:before {
+    left: -24px;
+    border-radius: 50% 0 0 50%;
+  }
+  .lds-heart div:after {
+    top: -24px;
+    border-radius: 50% 50% 0 0;
+  }
+  @keyframes lds-heart {
+    0% {
+      transform: scale(0.95);
+    }
+    5% {
+      transform: scale(1.1);
+    }
+    39% {
+      transform: scale(0.85);
+    }
+    45% {
+      transform: scale(1);
+    }
+    60% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(0.9);
+    }
+  }
+/* end loding screen */
+  
+/* start navbar all */
+.navbar
+{
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar .navb
+{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.navbar .navb ul
+{
+    display: flex;
+    gap: 40px;
+}
+.navbar .navb ul li a
+{
+    color: #707070;
+}
+
+.navbar .navb ul li .home
+{
+    color: #000;
+    font-size: 25px;
+}
+
+.navbar .navb button
+{
+    margin-top: 25px;
+    height: 30px;
+    padding: 0px 30px;
+    border: 2px solid transparent;
+    color: #ffffff;
+    background: #7F999A;
+    border-radius: 10px;
+    font-size:17px ;
+}
+
+
+
+
+
+/* end navbar all */
+
+section
+{
+    background: #eee;
+}
+ section .midea
+ {
+    width: 100%;
+    height: 50px;
+    background: #7F999A;
+    text-align: center;
+    line-height: 50px;
+    
+ }
+ section .midea i
+{
+color: #fff;
+font-size: 20px;
+padding: 0 20px;
+}
+
+/* start animet carosel img */
+
+.owl-carousel .cars
+{
+  width: 80%;
+ display: flex;
+ justify-content: center;
+ height: 500px;
+}
+.owl-carousel .boximg
+{
+    width: 80%;
+    margin: 30px auto;
+   
+}
+.owl-carousel .boximg img
+{
+    margin: 0 auto;
+    width: 70%;
+    border: 8px solid rgb(125, 124, 124);
+    border-radius: 50px;
+    position: relative;
+}
+ 
+.owl-carousel .boximg  .textimg p
+{
+    position: absolute;
+    bottom: 150px;
+    left: 344px;
+    background: #7F999A;
+    padding: 10px 50px 30px 50px;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 0px 10px 10px 0px;
+}
+.owl-carousel .boximg  .textimg h1
+{
+    position: absolute;
+    bottom: 130px;
+    left: 344px;
+    background: #DBB8A5;
+    padding: 7px 70px 7px 70px;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 0px 10px 10px 0px;}
+/* end animet carosel img */
+/* start boxs3 */
+
+.boxs3
+{
+    margin-top: 15px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    background: #f9f8f8;
+    align-items: center;
+}
+
+.boxs3 .box3
+{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.boxs3 .box3 .box
+{
+    text-align: center;
+    
+}
+.boxs3 .box3 .box img
+{
+    margin-bottom: 20px;
+}
+
+.boxs3 .box3 .box p
+{
+    margin-top: 5px;
+    color: #707070;
+}
+
+/* end boxs3 */
+/* start news vag */
+.news
+{
+  width: 100%;
+  height: 730px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+
+}
+.news .tit-news
+{
+  margin-top: 100px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.news .tit-news h1
+{
+  font-size: 30px;
+}
+.news .tit-news a
+{
+  font-size: 20px;
+  color: #5b5b5b;
+  background: #ababab;
+  padding: 5px 30px;
+  height: 40px;
+  border-radius: 10px;
+}
+/* start news vag */
+.news .booxs
+{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.news .booxs .box
+{
+  width: 30%;
+  height: 510px;
+background: #fff;
+justify-content: space-between;
+border-radius: 10px;
+box-shadow: 0 0 14px 1px rgb(133, 133, 133);
+
+
+}
+.news .booxs .box img
+{
+  
+  width: 90%;
+  height: 180px;
+  margin: 15px;
+}
+
+.news .booxs .box p
+{
+  font-size: 22px ;
+  padding: 0 19px;
+}
+.news .booxs .box .tar
+{
+  display: flex;
+  justify-content: space-between;
+margin-top: 30px; 
+margin-bottom: 10px;
+ color: #7F999A;
+ width: 80%;
+ font-size: 5px;
+}
+.news .booxs .box .tar,.date p
+{
+  font-size: 20px;
+
+}
+.news .booxs .box .date p
+{
+  font-size: 20px;
+
+}
+.news .booxs .box .date
+{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: -5px;
+  margin-bottom: 50px;
+  font-size: 5px;
+
+}
+.news .booxs .box a
+{
+  margin: -10px 30px;
+justify-content: center;  
+  color: #7F999A;
+  background: #e9e9e9;
+padding: 10px 80px;
+border-radius: 10px;
+}
+.news .booxs .box span
+{
+  color: #000;
+  font-size: 17px;
+}
+
+
+/* start about us almohja */
+.about-m
+{
+  width: 100%;
+  height: 580px;
+  background: #f3f3f3;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.about-m .about-mb
+{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 580px;
+ background-size: cover;
+}
+.about-m .about-mb .about-text
+{
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  padding-top: 150px;
+}
+.about-m .about-mb .text
+{
+  width: 20%;
+  line-height: 45px;
+}
+.about-m .about-mb .text h1
+{
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.about-m .about-mb .text p
+{
+  font-size: 25px;
+  color: #535353;
+}
+
+/* start about us almohja */
+.jops
+{
+  width: 100%;
+  height: 520px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.jops .tit-jop
+{
+  margin-top: 100px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.jops .tit-jop h1
+{
+  font-size: 32px;
+}
+
+
+.jops .tit-jop a
+{
+  font-size: 20px;
+  color: #5b5b5b;
+  background: #ababab;
+  padding: 5px 30px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.jops .boxs
+{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.jops .boxs .box
+{
+  width: 30%;
+  background: #fff;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px rgb(175, 174, 174);
+  position: relative;
+
+}
+
+.jops .boxs .box img
+{
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.jops .boxs .box h1
+{
+  position: absolute;
+  top: 20px;
+  right: 110px;
+}
+.jops .boxs .box p
+{
+  position: absolute;
+  top: 70px;
+  right: 95px
+}
+.jops .boxs .box h2
+{
+  font-size: 20px;
+  margin: 15px 20px;
+}
+.jops .boxs .box ul
+{
+  margin: -7px 40px;
+}
+.jops .boxs .box ul li
+{
+  list-style-type: disc;
+}
+/* end about us almohja */
+
+/* start contact my */
+
+.contact
+{
+  width: 100%;
+  height: 700px;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: center;
+}
+.contact .cont-my
+{
+  margin-top: 100px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.contact .cont-my .ti-cont
+{
+width: 40%;
+}
+.contact .cont-my .ti-cont p
+{
+font-size: 25px;
+color: #7F999A;
+}
+.contact .cont-my .ti-cont h1
+{
+  font-size: 45px;
+}
+
+.contact .cont-my .cont-form
+{
+  width: 40%;
+display: flex;
+justify-content: space-between;
+}
+
+.contact .cont-my .cont-form p
+{
+margin-bottom: 10px;
+font-size: 20px;
+}
+
+.contact .cont-my .cont-form input
+{
+  width: 100%;
+  height: 40px;
+  padding-right: 20px;
+  border: 1px solid transparent;
+  background: #E3E3E3;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.contact .cont-my .em-te
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .cont-my .em-te .emal
+{
+  width: 48%;
+  
+}
+.contact .cont-my .em-te .emal input
+{
+  width: 98%;
+  
+}
+.contact .cont-my .em-te .phon
+{
+  width: 48%;
+  
+}
+.contact .cont-my .em-te .phon input
+{
+  width: 100%;
+  
+}
+
+
+
+.contact .cont-my textarea
+{
+ 
+  padding-top: 10px;
+  padding-right: 20px;
+  border: 1px solid transparent;
+  background: #E3E3E3;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.contact .cont-my .cont-form .subm
+{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.contact .cont-my .cont-form  [type="submit"]
+{
+  width: 110px;
+  background: #7F999A;
+  
+  color: #fff;
+  padding: 0;
+}
+
+
+
+/* end contact my */
+
+/* start foot-links */
+
+.foot-link
+{
+  width: 100%;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.foot-link .footimg
+{
+  margin-top: 70px;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+height: 100px;
+}
+
+.foot-link .boxlink
+{
+  margin-top: -100px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot-link .boxlink .box
+{
+  width: 23%;
+}
+.foot-link .boxlink .box p
+{
+  margin-bottom: 10px;
+  color: #575757;
+}
+.foot-link .boxlink .box h1
+{
+  margin-bottom: 20px;
+}
+
+.foot-link .boxlink .box  a
+{
+  display: flex;
+  margin-bottom: 10px;
+  color: #535353;
+  
+}
+.foot-link .boxlink .box  a:hover
+{
+  border-bottom: 2px solid #535353;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+/* end foot-links */
+
+/* start foot-media */
+.foot-midea
+{
+  width: 100%;
+  height: 80px;
+  background: #E3E3E3;
+  display: flex;
+  justify-content: center;
+}
+
+.foot-midea .mide-copy
+{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.foot-midea .mide-copy .awsem a
+{
+  font-size: 25px;
+  color: #535353;
+  margin: 0 10px;
+}
+
+
+
+/* end foot-media */
+/* start media qwery */
+
+@media (max-width:991px)
+{
+  .navbar .navb img
+  {
+    display: none;
+  }
+
+  .owl-carousel .boximg
+  {
+    width: 98%;
+  }
+
+  .boxs3 .box3 .box {
+    text-align: center;
+    font-size: 28px;
+}
+.news {
+  width: 100%;
+  height: 1330px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.news .booxs {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: -725px;
+  margin-bottom: -26px;
+  height: 900px;
+}
+
+.news .booxs .box {
+  width: 48%;
+  height: 510px;
+  background: rgb(255, 255, 255);
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: rgb(133 133 133) 0px 0px 14px 1px;
+  margin: 287px 6px -236px;
+}
+
+.about-m .about-mb .about-text
+{
+  width: 98%;
+}
+
+.jops .boxs {
+  display: flex;
+  justify-content: space-between;
+  width: 99%;
+}
+
+.contact .cont-my {
+  margin-top: 100px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+}
+
+form
+{
+  width: 99%;
+
+}
+.contact {
+  width: 100%;
+  height: 810px;
+  background: rgb(247, 247, 247);
+  display: flex;
+  justify-content: center;
+}
+.contact .cont-my {
+  margin-top: 100px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact .cont-my .ti-cont {
+  width: 80%;
+  margin-bottom: 50px;
+
+}
+
+.foot-link {
+  width: 100%;
+  height: 869px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.foot-midea {
+  width: 100%;
+  height: 80px;
+  background: rgb(227, 227, 227);
+  display: flex;
+  justify-content: center;
+}
+.foot-link .footimg {
+  margin-top: 70px;
+  width: 81%;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+.foot-link .footimg img
+{
+  width: 80%;
+  height: 146px;
+}
+.foot-link .boxlink {
+  margin-top: 80px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.foot-link .boxlink .box
+{
+  width: 46%;
+  font-size: 25px;
+
+}
+
+.foot-midea .mide-copy
+{
+  width: 90%;
+}
+
+
+
+
+
+}
